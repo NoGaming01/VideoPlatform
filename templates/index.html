@@ -4,14 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    <title>Website</title>
+    <title>VideoPlatform</title>
 </head>
 <body>
-    <h1>This is a Website for sure.</h1>
+    <main>
+        <h1>VideoPlatform<h1>
 
-    <form action="/upload" method="post" enctype="multipart/form-data">
-        <input type="file" name="file" accept=".mp4">
-        <input type="submit" value="Upload">
-    </form>
+        <form action="/upload" method="post" enctype="multipart/form-data" class="upload">
+            <div class="file-input">
+                <input type="file" name="file" id="file" accept=".mp4">
+                Custom Upload
+            </div>
+            <div class="submit-button">
+                <input type="submit" value="Upload">
+            </div>
+        </form>
+    </main>
 </body>
 </html>

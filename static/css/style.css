@@ -1,4 +1,4 @@
-:root[data-theme="light"] {
+:root {
     --text: #071313;
     --background: #fafefe;
     --primary: #33d4d1;
@@ -6,19 +6,18 @@
     --accent: #4af1ee;
 }
 
-:root[data-theme="dark"] {
-  --text: #ecf8f8;
-  --background: #010404;
-  --primary: #2bcac7;
-  --secondary: #138684;
-  --accent: #0eb4b1;
-}
-
 @import url('https://fonts.googleapis.com/css?family=Lato:700|Lato:400');
+
+* {
+  margin: 0;
+  padding: 0;
+}
 
 body {
   font-family: 'Lato';
   font-weight: 400;
+  background-color: var(--background);
+  color: var(--text);
 }
 
 h1, h2, h3, h4, h5 {
@@ -39,3 +38,37 @@ h4 {font-size: 1.777rem; /* 28.48px */}
 h5 {font-size: 1.333rem; /* 21.28px */}
 
 small {font-size: 0.750rem; /* 12px */}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 10rem;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+main .upload {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: var(--primary);
+  width: 450px;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+main .upload input {
+  font-size: 1.2rem;
+}
+
+main .upload input[type="file"] {
+  display: none;
+}
+
+.file-input {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+}
