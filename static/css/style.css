@@ -1,0 +1,41 @@
+:root[data-theme="light"] {
+    --text: #071313;
+    --background: #fafefe;
+    --primary: #33d4d1;
+    --secondary: #7aecea;
+    --accent: #4af1ee;
+}
+
+:root[data-theme="dark"] {
+  --text: #ecf8f8;
+  --background: #010404;
+  --primary: #2bcac7;
+  --secondary: #138684;
+  --accent: #0eb4b1;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lato:700|Lato:400');
+
+body {
+  font-family: 'Lato';
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Lato';
+  font-weight: 700;
+}
+
+html {font-size: 100%;} /* 16px */
+
+h1 {font-size: 4.210rem; /* 67.36px */}
+
+h2 {font-size: 3.158rem; /* 50.56px */}
+
+h3 {font-size: 2.369rem; /* 37.92px */}
+
+h4 {font-size: 1.777rem; /* 28.48px */}
+
+h5 {font-size: 1.333rem; /* 21.28px */}
+
+small {font-size: 0.750rem; /* 12px */}
